@@ -61,6 +61,10 @@ while wait() do
             if win_value >= 60000 then
                 game:GetService("ReplicatedStorage"):WaitForChild("MAPS"):FireServer()
             end
+        elseif v.Name == 'Map8' then
+            wins.win7.CFrame = user.CFrame
+            wait(0.1)
+            wins.win7.CFrame = CFrame.new(pos0)
         end
     end
 end
